@@ -4,7 +4,11 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=AOSP Kernel | POCO X3/NFC
+kernel.string=Waifu Kernel | POCO X3/NFC
+kernel.compiler=Greenforce Clang
+kernel.made=NyaruToru
+kernel.version=4.14.117
+message.word=Flashing Done, You can now reboot.
 do.devicecheck=1
 do.modules=0
 do.systemless=1
