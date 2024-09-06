@@ -549,7 +549,6 @@ KERNEL_FOR="$(file_getprop anykernel.sh kernel.for)";
 KERNEL_COMPILER="$(file_getprop anykernel.sh kernel.compiler)";
 KERNEL_MADE="$(file_getprop anykernel.sh kernel.made)";
 KERNEL_VERSION="$(file_getprop anykernel.sh kernel.version)";
-BUILD_DATE=$(date +%Y-%m-%d)
 MESSAGE_WORD="$(file_getprop anykernel.sh message.word)";
 DEVICE_NAME="$(file_getprop anykernel.sh device.name3)";
 ui_print "_________________________________________________" " ";
@@ -557,7 +556,6 @@ ui_print "-- Kernel Name    : $KERNEL_STRING";
 ui_print "-- Kernel Version : $KERNEL_VERSION";
 ui_print "-- Compiler       : $KERNEL_COMPILER";
 ui_print "-- Device         : surya";
-ui_print "-- Build Date     : $BUILD_DATE";
 ui_print "-- Maintainer     : $KERNEL_MADE";
 ui_print "_________________________________________________" " ";
 if [ -f version ]; then
@@ -596,7 +594,6 @@ if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
   cleanup;
 fi;
 
-ui_print "- Done";
 ui_print " " "_________________________________________________";
 ui_print " " "$MESSAGE_WORD" "_________________________________________________" " ";
 export PATH="$OLD_PATH";
